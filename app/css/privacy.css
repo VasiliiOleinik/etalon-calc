@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  font-weight: normal;
+  font-size: 16px;
+  color: #474167;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  z-index: 1;
+}
+* {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  max-width: 70%;
+  padding: 0 30px;
+  margin: 0 auto;
+  position: relative;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: normal;
+}

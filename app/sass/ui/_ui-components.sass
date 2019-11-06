@@ -1,0 +1,129 @@
+body
+  margin: 0
+  font-weight: normal
+  font-size: 16px
+  color: #474167
+  font-family: 'Ubuntu', sans-serif
+  background: rgba(13,4,68, 1)
+  position: relative
+  z-index: 1
+
+  & *
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    background-color: transparent
+    box-sizing: border-box
+
+a
+  text-decoration: none
+  transition: .3s
+  color: inherit
+
+ul
+  list-style: none
+
+img
+  max-width: 100%
+
+button
+  cursor: pointer
+
+label
+  cursor: pointer
+  user-select: none
+
+  &:hover,
+  &:active,
+  &:focus
+    border: 0 !important
+    background: 0 !important
+    outline: 0 !important
+
+input[type="radio"]
+  &:hover,
+  &:active,
+  &:focus
+    border: 0 !important
+    background: 0 !important
+    outline: 0 !important
+
+
+section
+  flex-grow: 1
+
+select, input, textarea
+  border-radius: 0
+  background-color: transparent
+
+.content-wrapper
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+
+.page-wrapper
+  flex: 1 1
+
+.footer-wrapper
+  flex: 0 1
+
+.box
+  width: 100%
+  display: flex
+  max-width: 100%
+  padding: 0 60px
+  margin: 0 auto
+  position: relative
+  flex-direction: column
+    
+.row
+  max-width: 1620px
+  width: 100%
+  display: flex
+  margin: auto
+
+
+button
+  position: relative
+  overflow: hidden
+  text-align: center
+  vertical-align: middle
+  padding: 0px
+
+  &:after
+    content: ""
+    width: 7px
+    height: calc(100% + 20px)
+    transform: rotate(28deg)
+    background: rgba(255,255,255,.3)
+    display: block
+    position: absolute
+    left: 0
+    top: -5px
+    animation-timing-function: ease-in-out
+    animation-name: buttonAnimation
+    animation-duration: 3s
+    animation-iteration-count: infinite
+
+  & span
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 100%
+    text-align: center
+
+@keyframes buttonAnimation
+  0% 
+    left: -30px
+    margin-left: 0px
+  30%
+    left: 110%
+    margin-left: 80px
+  100% 
+    left: 110%
+    margin-left: 80px
+    
+.ui-slider-handle 
+  cursor: pointer !important
