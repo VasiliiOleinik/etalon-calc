@@ -1,10 +1,10 @@
 extends blocks/_layout
 append content
+	.backround-text ЭТАЛОНЪ
 	main.main
 		.box
 			.row
 				.main-content
-					//- .backround-text ЭТАЛОНЪ
 					.first-section
 						.first-section__left
 							.first-section__left-top
@@ -45,5 +45,8 @@ append content
 										small#start-time 0:00
 										span /
 										small#end-time 3:25
+							.go-to-main
+								a(href="/" class="go-to-main__link") На главную
+									img(src="img/arrow.svg", alt="Arrow")
 
 

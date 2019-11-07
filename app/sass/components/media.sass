@@ -6,7 +6,12 @@
 	.footer-content__section.third,
 	.footer-content__section.fourth
 		margin-right: 30px
-
+	.audio-player .player-controls
+		width: 400px
+		
+@include media( 1300 )
+	.audio-player .player-controls
+		width: 200px
 @include media( 1100 )
 	.main .second-section__left
 		margin-right: 100px
@@ -81,7 +86,33 @@
 		font-size: 20px
 	.main .second-section__left .link
 		max-width: 230px
+	
+	.backround-text
+		font-family: 'Montserrat', sans-serif
+		font-style: normal
+		font-weight: bold
+		font-size: 144px
+		line-height: initial
+		letter-spacing: 0.04em
+		color: rgba(255, 255, 255, 0.05)
+		position: absolute
+		bottom: 50%
+		top: initial
+		left: 40%
+		-webkit-transform: rotate(90deg)
+		-ms-transform: rotate(90deg)
+		transform: rotate(90deg)
+		width: 100%
+		max-width: initial
+	.audio-player .player-controls
+		min-width: initial
+	.go-to-main
+		justify-content: flex-start
+		margin-top: 25px
 
+@include media( 769 )
+	.backround-text
+		display: none	
 @include media( 767 )
 	.header__name-text.name
 		display: none
@@ -182,3 +213,14 @@
 			line-height: 22px
 			letter-spacing: 0.02em
 			color: #FFFFFF
+	.main .second-section__left
+		position: relative
+	.audio-player #play-btn
+		position: absolute
+		top: -20px
+		left: 150px
+	.audio-player .player-controls
+		width: 100%
+		margin-left: 0px
+	.main .second-section__left .link
+		max-width: 180px
