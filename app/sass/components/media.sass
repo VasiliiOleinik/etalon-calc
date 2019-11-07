@@ -1,0 +1,184 @@
+@include media( 1500 )
+	.footer-content
+		font-size: 14px
+	.footer-content__section.first,
+	.footer-content__section.second,
+	.footer-content__section.third,
+	.footer-content__section.fourth
+		margin-right: 30px
+
+@include media( 1100 )
+	.main .second-section__left
+		margin-right: 100px
+
+@include media( 991 )
+	.header__name-text,
+	.footer-content__section.first .logo,
+	.footer-content__section.second
+		display: none
+	.header__name-text.name
+		display: flex
+	.footer-content__section.first,
+	.footer-content__section.second,
+	.footer-content__section.third,
+	.footer-content__section.fourth,
+	.footer-content__section.fifth,
+		width: 50%
+		max-width: initial
+		margin-right: 0px
+		margin-bottom: 15px
+		height: auto
+	.footer-content__section.first
+		padding-right: 15px
+		order: 1
+	.footer-content__section.fifth
+		order: 2
+	.footer-content__section.fourth
+		order: 3
+		padding-right: 15px
+		justify-content: flex-start
+	.footer-content__section.third
+		order: 4
+		align-items: flex-start
+	.footer-content__section.second
+		order: 5
+	.footer-content
+		flex-wrap: wrap
+	.main .first-section
+		flex-direction: column
+	.main .first-section__left
+		max-width: initial
+		margin-right: 0
+		flex-direction: row
+		margin-bottom: 64px
+	.main .first-section__right
+		width: 100%
+	.main .first-section__left-top,
+	.main .first-section__left-bottom
+		width: 50%
+		margin: 0px
+	.link
+		font-size: 14px
+	.main .first-section__right .link
+		max-width: 310px
+	.main .first-section__right .final-summ
+		font-size: 38px
+	.main .first-section
+		margin-bottom: 55px
+	.main .second-section
+		flex-direction: column
+	.main .second-section__left
+		max-width: initial
+		margin-right: 0px
+	.main .second-section__right
+		width: 100%
+	.main .second-section__left-bottom
+		margin-bottom: 25px
+		max-width: 365px
+		width: 100%
+		margin-top: 55px
+	.main .second-section__left-bottom span
+		font-size: 20px
+	.main .second-section__left .link
+		max-width: 230px
+
+@include media( 767 )
+	.header__name-text.name
+		display: none
+	.box
+		padding: 0px 20px
+	.header__contacts-phone
+		font-family: 'Exo', sans-serif
+		font-style: normal
+		font-weight: 600
+		font-size: 10px
+		line-height: 140.9%
+		letter-spacing: 0.02em
+		color: #FFFFFF
+	.logo
+		width: 46px
+		height: 46px
+	.logo-circle
+		width: 35px
+		height: 35px
+	.logo-text
+		font-family: 'Exo 2', sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 14px
+		line-height: 17px
+		letter-spacing: 0.04em
+		color: #42B4B8
+	.main
+		padding: 25px 0px
+	.header
+		height: 100px
+	.header__name
+		max-width: initial
+		width: auto
+	.main .first-section__left-top span
+		font-family: 'Exo 2', sans-serif
+		font-style: normal
+		font-weight: bold
+		font-size: 16px
+		line-height: 19px
+		letter-spacing: 0.02em
+		color: #FFFFFF
+	.main .first-section__left-top
+		max-width: 195px
+		width: 100%
+		margin-right: 15px
+	.main .first-section__left-bottom
+		max-width: 200px
+		width: 100%
+		padding-left: 10%
+	.main .first-section__left
+		justify-content: center
+	.main .first-section__left-bottom .param
+		font-family: 'Exo 2', sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 16px
+		line-height: 19px
+		letter-spacing: 0.02em
+		color: rgba(255, 255, 255, 0.6)
+		margin-bottom: 5px
+	.main .first-section__left
+		margin-bottom: 35px
+	.main .first-section__right .final-summ
+		font-family: 'Exo 2', sans-serif
+		font-style: normal
+		font-weight: bold
+		font-size: 30px
+		line-height: 36px
+		letter-spacing: 0.02em
+		color: #FFFFFF
+		text-align: center
+		margin-bottom: 30px
+	.main .first-section__right
+		align-items: center
+	.link
+		font-size: 12px
+
+		&:after
+			width: 30px
+			height: 30px
+			background-size: 50%
+	.main .first-section__right .link
+		max-width: 245px
+		width: 100%
+	.main .second-section__left-bottom span
+		display: none
+	.footer
+		height: auto
+	.main .second-section__left-top
+		max-width: 170px
+		width: 100%
+		& span
+			font-family: 'Exo 2', sans-serif
+			font-style: normal
+			font-weight: bold
+			font-size: 18px
+			line-height: 22px
+			letter-spacing: 0.02em
+			color: #FFFFFF

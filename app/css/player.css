@@ -1,147 +1,51 @@
-.player {
-	position: relative;
-	width: 500px;
-	height: 60px;
-	background-color: rgba(0, 0, 0, 0.2);
+.audio-player {
+	border: 1px solid #dfdfdf;
+	text-align: center;
 	display: flex;
-	border-radius: 2px;
-	padding: 5 16px;
+	flex-flow: row;
+	width: auto;
   }
-  .player img {
-	margin-top: 5px;
-	width: 60px;
-	height: 50px;
+  .audio-player .album-image {
+	min-height: 100px;
+	width: 100px;
+	background-size: cover;
   }
-  .player .info {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	width: 50%;
-	padding: 0 16px;
-  }
-  .player .info .name {
-	font-size: 15px;
-	font-weight: 700;
-  }
-  .player .info .singer {
-	font-size: 12px;
-  }
-  .player .btns {
-	width: 50%;
-	display: flex;
-	justify-content: space-between;
+  .audio-player .player-controls {
 	align-items: center;
-	padding: 0 16px;
+	justify-content: center;
+	margin-top: 2.5rem;
+	flex: 3;
   }
-  .player .btns div:nth-child(1) {
-	font-size: 30px;
+  .audio-player .player-controls progress {
+	width: 90%;
   }
-  .player .btns div:nth-child(2), .player .btns div:nth-child(3) {
-	font-size: 18px;
+  .audio-player .player-controls progress[value] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: white;
+	color: blue;
+	height: 5px;
   }
-  .player .progress {
-	position: absolute;
-	height: 2px;
-	left: 0;
-	top: 0;
-	background-color: #00a8ff;
+  .audio-player .player-controls progress[value]::-webkit-progress-bar {
+	background-color: white;
+	border-radius: 2px;
+	border: 1px solid #dfdfdf;
+	color: blue;
   }
-  @font-face {
-	font-family: iconfont;
-	src: url('//static0.qianqian.com/web/st/font/iconfont-4e6.woff') format('woff');
+  .audio-player .player-controls progress::-webkit-progress-value {
+	background-color: blue;
   }
-  .iconfont {
-	font-family: iconfont !important;
-	font-size: 16px;
-	font-style: normal;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  .audio-player .player-controls p {
+	font-size: 1.6rem;
   }
-  .icon-list:before {
-	content: "\e603";
+  .audio-player #play-btn {
+	background-image: url('http://imgur.com/JzQP8td.png');
+	background-size: cover;
+	width: 75px;
+	height: 75px;
+	margin: 2rem 0 2rem 2rem;
   }
-  .icon-loop-single:before {
-	content: "\e604";
-  }
-  .icon-arrow-right:before {
-	content: "\e605";
-  }
-  .icon-loop:before {
-	content: "\e606";
-  }
-  .icon-prev:before {
-	content: "\e607";
-  }
-  .icon-favor:before {
-	content: "\e608";
-  }
-  .icon-next:before {
-	content: "\e60a";
-  }
-  .icon-download:before {
-	content: "\e60b";
-  }
-  .icon-search:before {
-	content: "\e60c";
-  }
-  .icon-zhanwei1:before {
-	content: "\e610";
-  }
-  .icon-favor1:before {
-	content: "\e618";
-  }
-  .icon-random:before {
-	content: "\e619";
-  }
-  .icon-play:before {
-	content: "\e616";
-  }
-  .icon-stop:before {
-	content: "\e617";
-  }
-  .icon-mv:before {
-	content: "\e61b";
-  }
-  .icon-arrow-down:before {
-	content: "\e61d";
-  }
-  .icon-arrow-left:before {
-	content: "\e61e";
-  }
-  .icon-arrow-up:before {
-	content: "\e61f";
-  }
-  .icon-listen:before {
-	content: "\e609";
-  }
-  .icon-round:before {
-	content: "\e60d";
-  }
-  .icon-triangle:before {
-	content: "\e60e";
-  }
-  .icon-information:before {
-	content: "\e60f";
-  }
-  .icon-home:before {
-	content: "\e611";
-  }
-  .icon-i:before {
-	content: "\e612";
-  }
-  .icon-information-:before {
-	content: "\e613";
-  }
-  .icon-bubble-filled-icon:before {
-	content: "\e614";
-  }
-  .icon-round-right:before {
-	content: "\e615";
-  }
-  .icon-vip:before {
-	content: "\e61a";
-  }
-  .icon-word:before {
-	content: "\e61c";
+  .audio-player #play-btn.pause {
+	background-image: url('http://imgur.com/MbJn41l.png');
   }
   
