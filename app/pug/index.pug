@@ -34,16 +34,16 @@ append content
 						.second-section__right
 							.audio-player
 								#play-btn
-								.audio-wrapper#player-container(href="javascript:;")
-									audio#player(ontimeupdate="initProgressBar()")
-										source(src="audio/grot.mp3" type="audio/mp3")
+								#player-container.audio-wrapper(href='javascript:;')
+									audio#player(ontimeupdate='initProgressBar()')
+										source(src='audio/grot.mp3' type='audio/mp3')
 								.player-controls.scrubber
-									p Oslo
-										small by
-										| Holy Esque
-								span#seekObjContainer
-										progress(id="seekObj" value="0" max="1")
-								<br/>
-								small(class="start-time" style="float: left; position: relative; left: 15px;")
-								small(class="end-time" style="float: right; position: relative; right: 20px;")
+									span#seek-obj-container
+										span#player-dot
+										progress#seek-obj(value='0' max='1')
+									.time
+										small#start-time 0:00
+										span /
+										small#end-time 3:25
+
 

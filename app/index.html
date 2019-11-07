@@ -53,17 +53,16 @@
                   <div class="second-section__right">
                     <div class="audio-player">
                       <div id="play-btn"></div>
-                      <div class="audio-wrapper" id="layer-container" href="javascript:;">
-                        <audio id="layer" ontimeupdate="initProgressBar()">
-                          <source src="http://www.lukeduncan.me/oslo.mp3" type="audio/mp3">
+                      <div class="audio-wrapper" id="player-container" href="javascript:;">
+                        <audio id="player" ontimeupdate="initProgressBar()">
+                          <source src="audio/grot.mp3" type="audio/mp3">
                         </audio>
                       </div>
-                      <div class="player-controls scrubber">
-                        <p>Oslo<small>by</small>Holy Esque</p>
-                      </div><span id="seekObjContainer">
-                        <progress id="seekObj" value="0" max="1"></progress></span><br/><small class="start-time" style="float: left; position: relative; left: 15px;"></small><small class="end-time" style="float: right; position: relative; right: 20px;"></small>
+                      <div class="player-controls scrubber"><span id="seek-obj-container"><span id="player-dot"></span>
+                          <progress id="seek-obj" value="0" max="1"></progress></span>
+                        <div class="time"><small id="start-time">0:00</small><span>/</span><small id="end-time">3:25</small></div>
+                      </div>
                     </div>
-                    <div class="album-image" style="background-image: url('https://artwork-cdn.7static.com/static/img/sleeveart/00/051/614/0005161476_350.jpg')"></div>
                   </div>
                 </div>
               </div>
@@ -77,9 +76,9 @@
             <div class="footer-content">
               <div class="footer-content__section first"><a class="logo" href="/">
                   <div class="logo-circle"><span class="logo-text">Ъ</span></div></a><span class="footer-text">© СК ООО «ЭТАЛОНЪ</span></div>
-              <div class="footer-content__section second"><span class="footer-text">+7 (495) 745-27-03<br/></span><span class="footer-text">+7 (985) 210-31-68</span></div>
+              <div class="footer-content__section second"><a class="footer-text" href="tel:74957452703">+7 (495) 745-27-03</a><a class="footer-text" href="tel:79852103168">+7 (985) 210-31-68</a></div>
               <div class="footer-content__section third"><span class="footer-text">Адрес</span></div>
-              <div class="footer-content__section fourth"><span class="footer-text">ИНН: 7722526444,<br/> ОГРН: 1047796735711</span></div>
+              <div class="footer-content__section fourth"><span class="footer-text">ИНН: 7722526444,</span><span class="footer-text">ОГРН: 1047796735711</span></div>
               <div class="footer-content__section fifth"><a class="footer-text" href="privacy.html">Политика конфиденциальности</a></div>
             </div>
           </div>
